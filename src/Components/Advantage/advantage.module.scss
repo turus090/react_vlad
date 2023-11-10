@@ -1,0 +1,67 @@
+.advantage {
+    width: 100%;
+    background: #000;
+
+    &_wrapper {
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    &_title {
+        padding-top: 36px;
+        text-align: center;
+        color: #B2A738;
+        font-family: BIZ UDPGothic;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80px;
+        text-decoration-line: underline;
+        text-underline-offset: 5px;
+    }
+
+    &_cards {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        column-gap: 15px;
+        overflow-x: scroll;
+
+        &_item {
+            width: 274px;
+            height: 348px;
+            border-radius: 10px;
+            border: 1px solid rgba(205, 174, 93, 0.50);
+            padding: 25px 20px 0 20px;
+
+            &_up {
+
+                display: flex;
+                justify-content: space-around;
+
+                &_title {
+                    width: 100px;
+                    color: #B2A738;
+                    font-family: BIZ UDPGothic;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 30px;
+                    text-decoration-line: underline;
+                }
+            }
+
+            &_text {
+                width: 270px;
+                padding-top: 40px;
+                color: #FFF;
+                font-family: Blinker;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 1.12px;
+            }
+        }
+    }
+}

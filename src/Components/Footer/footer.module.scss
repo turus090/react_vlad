@@ -1,0 +1,108 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background: #000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 36px;
+
+    &_title {
+        color: #b2a738;
+        font-family: BIZ UDPGothic;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80px;
+        text-decoration-line: underline;
+    }
+
+    &_map {
+        width: 334px;
+        height: 334px;
+        border-radius: 20px;
+        outline: rgba(205, 174, 93, 0.5);
+    }
+
+
+
+    &_address {
+        margin-top: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 16px;
+
+        &_img {
+            width: 25px;
+            height: 25px;
+        }
+
+        &_text {
+            width: 200px;
+            color: #FFF;
+            font-family: Blinker;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+
+    &_social {
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+
+        &_item {
+            width: 40px;
+            height: 40px;
+
+            &_link {
+                margin-top: 36px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #E4A951;
+                border-radius: 50%;
+            }
+        }
+
+
+    }
+
+    &_line {
+        height: 1px;
+        background: #CDAE5D;
+        margin: 0 auto;
+
+        &_up {
+            margin-top: 36px;
+            width: 180px;
+
+        }
+
+        &_bottom {
+            margin-top: 3px;
+            width: 100px;
+        }
+    }
+
+
+
+    &_copyright {
+        padding: 10px 0;
+        color: #FFF;
+
+        font-family: Blinker;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+    }
+}

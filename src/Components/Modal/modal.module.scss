@@ -1,0 +1,104 @@
+.modal {
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 4%;
+    width: calc(92% - 40px);
+    height: 490px;
+    border: 1px solid #CDAE5D;
+    border-radius: 15px;
+    background: #000;
+
+    &_up {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        &_btn {
+            cursor: pointer;
+            padding: 0;
+            background: none;
+            border: none;
+            transform: translateY(-5px);
+
+            &_close {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    &_content {
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+
+        &_listLinks {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            &_item {
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    font-family: BioRhyme;
+                    font-size: 26px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 40px;
+                }
+
+                .active {
+                    color: #CDAE5D;
+                }
+            }
+
+        }
+
+        &_listIcons {
+            align-self: flex-end;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            &_item {
+                &_link {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #E4A951;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    &_line {
+        height: 1px;
+        background: #CDAE5D;
+        margin: 0 auto;
+    }
+
+    .line {
+        &_up {
+            width: 180px;
+
+        }
+
+        &_bottom {
+            margin-top: 3px;
+            width: 100px;
+        }
+    }
+}
