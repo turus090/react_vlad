@@ -1,0 +1,262 @@
+.price {
+    width: calc(100% - 230px);
+    padding: 80px 115px;
+    background: #131312;
+
+    &_container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &_title {
+
+        color: #B2A738;
+        font-family: BIZ UDPGothic;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        text-decoration-line: underline;
+    }
+
+    &_cards {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_item {
+            width: 370px;
+            height: 550px;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 36px;
+            padding-left: 20px;
+
+            &_list {
+                width: calc(100% - 20px);
+                height: 170px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+                padding-top: 60px;
+                list-style: none;
+
+                &_text {
+                    padding-top: 50px;
+                    color: #FFF;
+                    font-family: Blinker;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 45px;
+                }
+
+                &_service {
+                    color: #FFF;
+                    font-family: Blinker;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+
+                    span {
+                        color: #CDAE5D;
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
+                }
+            }
+
+            &_title {
+                color: #B2A738;
+                font-family: BIZ UDPGothic;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                text-decoration-line: underline;
+            }
+        }
+    }
+
+
+}
+
+.card {
+    &_1 {
+        background: url('./img/price_1.png');
+    }
+
+    &_2 {
+        background: url('./img/price_2.png');
+    }
+
+    &_3 {
+        background: url('./img/price_3.png');
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .price {
+        width: 100%;
+        padding: 36px 0;
+
+        &_title {
+            text-align: center;
+            color: #B2A738;
+            font-family: BIZ UDPGothic;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            text-decoration-line: underline;
+        }
+
+        &_cards {
+            width: 90%;
+            margin: 36px auto 0 auto;
+            column-gap: 15px;
+            overflow-y: scroll;
+
+            &_item {
+                list-style: none;
+                width: 292px;
+                height: 382px;
+                min-width: 292px;
+                padding-bottom: 36px;
+
+                &_title {
+                    text-align: center;
+                    color: #B2A738;
+                    font-family: BIZ UDPGothic;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-decoration-line: underline;
+                }
+
+                &_list {
+                    padding-top: 36px;
+
+                    &_service {
+                        color: #FFF;
+                        font-family: Blinker;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 35px;
+
+                        span {
+                            color: #CDAE5D;
+                            font-size: 14px;
+                        }
+                    }
+
+                    &_text {
+                        padding: 0 20px 0 0;
+                        color: #FFF;
+                        font-family: Blinker;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width:768px) {
+    .price {
+        width: 100%;
+        padding: 36px 0;
+
+        &_title {
+            text-align: center;
+            color: #B2A738;
+            font-family: BIZ UDPGothic;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            text-decoration-line: underline;
+        }
+
+        &_cards {
+            width: 92%;
+
+            margin: 36px auto 0 auto;
+            column-gap: 15px;
+            overflow-y: scroll;
+
+            &_item {
+                width: 292px;
+                height: 382px;
+                min-width: 292px;
+
+                &_title {
+                    text-align: center;
+                    color: #B2A738;
+                    font-family: BIZ UDPGothic;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                    text-decoration-line: underline;
+                }
+
+                &_list {
+                    padding-top: 36px;
+
+                    &_service {
+                        color: #FFF;
+                        font-family: Blinker;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 35px;
+
+                        span {
+                            color: #CDAE5D;
+                            font-size: 14px;
+                        }
+                    }
+
+                    &_text {
+                        padding: 0 20px 0 0;
+                        color: #FFF;
+                        font-family: Blinker;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1439px) {
+
+    .price {
+        width: 92%;
+        max-width: 768px;
+        padding: 80px 0;
+        margin: 0 auto;
+
+        &_cards {
+            overflow-x: scroll;
+
+            &_item {
+                min-width: 370px;
+                list-style: none;
+            }
+        }
+    }
+}

@@ -25,4 +25,60 @@
             height: 100%;
         }
     }
+
+    &_nav {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .panel {
+        &_logo {
+            width: 90px;
+            height: 90px;
+        }
+
+        &_btn {
+            display: none;
+        }
+
+        &_nav {
+            display: flex;
+            align-items: center;
+            column-gap: 30px;
+
+            &_item {
+                text-decoration: none;
+                color: #FFF;
+                font-family: Murecho;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: 0.8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .panel {
+        padding-top: 26px;
+
+        &_logo {
+            width: 90px;
+            height: 90px;
+        }
+
+        &_nav {
+            column-gap: 60px;
+
+            &_item {
+                font-size: 22px;
+            }
+        }
+
+    }
 }

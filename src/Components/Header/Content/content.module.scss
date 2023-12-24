@@ -16,6 +16,10 @@
     &_group {
         margin-top: 68px;
 
+        &_right {
+            display: none;
+        }
+
         &_left {
             display: flex;
             flex-direction: column;
@@ -46,6 +50,165 @@
                 font-weight: 500;
                 line-height: normal;
             }
+
+            &_btnService {
+                display: none;
+                cursor: pointer;
+                width: 175px;
+                height: 50px;
+                border: none;
+                border-radius: 15px;
+                background: #CDAE5D30;
+                color: #FFFFFF;
+
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        &_title {
+            width: 410px;
+            padding-top: 60px;
+            color: #B2A738;
+            font-family: BIZ UDPGothic;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 70px;
+            letter-spacing: 18px;
+
+            &:hover {
+                color: #CDAE5D;
+                transition-duration: 0.5s;
+            }
+        }
+
+
+        &_group {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+
+            &_left {
+                row-gap: 40px;
+
+                &_text {
+                    width: 100%;
+                    color: #989892;
+                    font-family: Blinker;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 50px;
+
+                }
+
+                &_btn {
+                    margin-top: 100px;
+                    width: 255px;
+
+                    &:hover {
+                        color: #FFFFFF;
+                        background: none;
+                        border: 1px solid #CDAE5D;
+                        transition-duration: 0.5s;
+                    }
+                }
+
+                &_btnService {
+                    display: block;
+                    width: 255px;
+
+                    &:hover {
+                        color: #CDAE5D;
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+
+            &_right {
+                display: flex;
+                align-self: flex-end;
+                flex-direction: column;
+                row-gap: 30px;
+                list-style: none;
+
+
+                &_item {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: #CDAE5D;
+
+                    &:hover {
+                        background: #8F6906;
+                        transition-duration: 0.5s;
+                    }
+
+                    &_link {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .btn_group {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &_title {
+            width: 536px;
+            font-size: 65px;
+            line-height: 80px;
+        }
+
+        &_group {
+            width: 536px;
+
+            &_left {
+                width: 100%;
+
+                button {
+                    width: 240px;
+                    margin: 0;
+                }
+            }
+
+            &_right {
+                display: none;
+            }
+
+        }
+    }
+
+    .btn_group {
+        margin-top: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
 }

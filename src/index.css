@@ -1,3 +1,10 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
 /*
 *  html5resetcss
 */
@@ -79,6 +86,7 @@ video {
   background: transparent;
 }
 body {
+  background: #131312;
   line-height: 1;
 }
 article,

@@ -3,6 +3,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Header from "./Components/Header/Header";
 import Advantage from "./Components/Advantage/Advantage";
 import Footer from "./Components/Footer/Footer";
+import Price from "./Components/Price/Price";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <main>
           <AboutUs />
           <Advantage />
+          <Price />
         </main>
         <Footer />
       </BrowserRouter>
