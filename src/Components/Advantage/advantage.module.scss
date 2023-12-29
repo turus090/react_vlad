@@ -116,7 +116,7 @@
     .advantage {
         &_wrapper {
             width: calc(100% - 230px);
-            padding: 0 80px;
+            padding: 0 80px 80px 80px;
             max-width: 1440px;
 
             &_title {
@@ -126,7 +126,7 @@
         }
 
         &_cards {
-            gap: 20px 30px;
+            gap: 40px 30px;
             justify-content: space-between;
 
             &_item {

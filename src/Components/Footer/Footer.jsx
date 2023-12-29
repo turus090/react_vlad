@@ -10,10 +10,11 @@ import {
   TelegramIcon,
 } from "../Assets/Icons";
 import s from "./footer.module.scss";
+import { Element } from "react-scroll";
 
 const Footer = () => {
   return (
-    <>
+    <Element name="footer">
       <footer className={s.footer}>
         <h2 className={s.footer_title}> Контакти </h2>
         <iframe
@@ -142,7 +143,7 @@ const Footer = () => {
           </p>
         </section>
       </footer>
-    </>
+    </Element>
   );
 };
 

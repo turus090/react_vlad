@@ -43,7 +43,7 @@
 
 @media screen and (min-width: 1440px) {
     .header {
-        height: 868px;
+        height: auto;
         background: url(./img/hero_desctop.png);
         background-size: 910px;
         background-repeat: no-repeat;
@@ -60,6 +60,7 @@
 @media screen and (min-width: 1441px) {
     .header {
         background: none;
+
     }
 
     .wrapper {

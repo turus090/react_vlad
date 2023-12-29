@@ -1,11 +1,11 @@
 import { InstaIcon, FasebookIcon, TelegramIcon } from "../../Assets/Icons";
 import s from "./content.module.scss";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Content = () => {
-  const navigate = useNavigate();
   const handleClick = () => {
-    navigate("https://www.instagram.com/train.with.vlad/");
+    window.location.href = "https://www.instagram.com/train.with.vlad/";
   };
   return (
     <div className={s.content}>
@@ -17,9 +17,11 @@ const Content = () => {
             <button onClick={handleClick} className={s.content_group_left_btn}>
               ЗАПИСАТИСЯ
             </button>
-            <button className={s.content_group_left_btnService}>
-              ОБРАТИ ПОСЛУГУ
-            </button>
+            <ScrollLink to="price" spy={true} smooth={true} duration={500}>
+              <button className={s.content_group_left_btnService}>
+                ОБРАТИ ПОСЛУГУ
+              </button>
+            </ScrollLink>
           </div>
         </div>
         <ul className={s.content_group_right}>
