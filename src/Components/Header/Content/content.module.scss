@@ -74,9 +74,10 @@
 @media screen and (min-width: 768px) {
     .content {
         &_title {
+            cursor: pointer;
             width: 410px;
             padding-top: 60px;
-            color: #B2A738;
+            color: #8F6906;
             font-family: BIZ UDPGothic;
             font-size: 48px;
             font-style: normal;

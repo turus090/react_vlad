@@ -10,6 +10,9 @@ import {
   TelegramIcon,
   FasebookIcon,
 } from "../Assets/Icons";
+
+import { Link as ScrollLink } from "react-scroll";
+
 const Modal = ({ handleToggleModal }) => {
   const styleObj = {
     up: classnames([s.modal_line, "line_up"]),
@@ -30,12 +33,14 @@ const Modal = ({ handleToggleModal }) => {
       <div className={s.modal_content}>
         <ul className={s.modal_content_listLinks}>
           <li className={s.modal_content_listLinks_item}>
-            <a className={s.active} href="#">
+            <ScrollLink to="aboutUs" spy={true} smooth={true} duration={500}>
               Про мене
-            </a>
+            </ScrollLink>
           </li>
           <li className={s.modal_content_listLinks_item}>
-            <a href="#">Послуги</a>
+            <ScrollLink to="advantage" spy={true} smooth={true} duration={500}>
+              Послуги
+            </ScrollLink>
           </li>
           <li className={s.modal_content_listLinks_item}>
             <a href="#">Результат</a>
@@ -47,7 +52,9 @@ const Modal = ({ handleToggleModal }) => {
             <a href="#"> FQA</a>
           </li>
           <li className={s.modal_content_listLinks_item}>
-            <a href="#">Контакти</a>
+            <ScrollLink to="footer" spy={true} smooth={true} duration={500}>
+              Контакти
+            </ScrollLink>
           </li>
         </ul>
         <ul className={s.modal_content_listIcons}>

@@ -83,6 +83,10 @@
         &_imgDesktop {
             display: none;
         }
+
+        &_img {
+            display: block !important;
+        }
     }
 }
 
@@ -113,7 +117,7 @@
 
     .right {
         &_img {
-            display: none;
+            display: none !important;
         }
 
         &_imgDesktop {
