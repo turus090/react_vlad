@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Advantage from "./Components/Advantage/Advantage";
 import Footer from "./Components/Footer/Footer";
 import Price from "./Components/Price/Price";
+import Gallery from "./Components/Gallery/Gallery";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <AboutUs />
           <Advantage />
           <Price />
+          <Gallery />
         </main>
         <Footer />
       </BrowserRouter>
