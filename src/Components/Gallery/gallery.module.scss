@@ -19,7 +19,7 @@
         column-gap: 40px;
 
         &_left {
-            width: 364px;
+            flex: 1;
             display: flex;
             flex-direction: column;
             row-gap: 40px;
@@ -36,7 +36,7 @@
         }
 
         &_right {
-            width: 785px;
+            flex: 2;
             display: flex;
             flex-direction: column;
             row-gap: 40px;
@@ -46,31 +46,53 @@
                 column-gap: 40px;
 
                 &_left {
-                    width: 368px;
+                    flex: 1;
                     height: 698px;
                 }
 
                 &_right {
+                    flex: 1;
                     display: flex;
                     flex-direction: column;
                     row-gap: 40px;
 
                     &_top {
-                        width: 379px;
+                        width: 100%;
                         height: 358px;
                     }
 
                     &_bottom {
-                        width: 379px;
+                        width: 100%;
                         height: 300px;
                     }
                 }
             }
 
             &_bottom {
-                width: 785px;
+                width: 100%;
                 height: 629px;
             }
+        }
+    }
+
+    &_contentT {
+        display: flex;
+        column-gap: 40px;
+        width: 100%;
+        margin: 80px auto 0 auto;
+
+        &_left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+
+        &_right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
         }
     }
 }
@@ -79,4 +101,27 @@
     width: calc(100% - 230px);
     max-width: 1440px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 451px) and (max-width:769px) {
+    .gallery {
+
+        width: 92%;
+        max-width: 768px;
+        padding: 80px 0;
+        margin: 0 auto;
+
+        &_wrapper {
+            width: 100%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+    .gallery {
+        &_content {
+            display: none;
+        }
+    }
 }
