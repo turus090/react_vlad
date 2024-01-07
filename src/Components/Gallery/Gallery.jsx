@@ -6,10 +6,8 @@ import rightTopLeftImg from "./img/right_top.jpg";
 import rightTopRightImg from "./img/right_top_right.jpg";
 import rightTopButtomImg from "./img/right_buttom.jpg";
 import rightBottomImg from "./img/right_buttom_buttom.jpg";
-import tabletLeft_1_1 from "./img/item_1_1.jpg";
-import tabletLeft_2_1 from "./img/item_2_1.jpg";
-import tabletLeft_3_1 from "./img/item_3_1.jpg";
-import tabletLeft_4_1 from "./img/item_4_1.jpg";
+import Tablet from "./Tablet/Tablet";
+
 const Gallery = () => {
   return (
     <section className={s.gallery}>
@@ -55,32 +53,7 @@ const Gallery = () => {
             />
           </div>
         </div>
-        <div className={s.gallery_contentT}>
-          <div className={s.gallery_contentT_left}>
-            <img
-              className={s.gallery_contentT_left_top}
-              src={tabletLeft_1_1}
-              alt="чемпіонат України з бодибілдінгу"
-            />
-            <img
-              className={s.gallery_contentT_left_bottom}
-              src={tabletLeft_2_1}
-              alt="чемпіонат України з бодибілдінгу"
-            />
-          </div>
-          <div className={s.gallery_contentT_right}>
-            <img
-              className={s.gallery_contentT_right_top}
-              src={tabletLeft_3_1}
-              alt="чемпіонат України з бодибілдінгу"
-            />
-            <img
-              className={s.gallery_contentT_right_bottom}
-              src={tabletLeft_4_1}
-              alt="чемпіонат України з бодибілдінгу"
-            />
-          </div>
-        </div>
+        <Tablet />
       </div>
     </section>
   );

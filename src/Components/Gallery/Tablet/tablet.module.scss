@@ -1,0 +1,28 @@
+.container {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 30px;
+
+    &_btn {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #6d5126;
+
+        &_active {
+            background: #E4A951;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        display: block;
+    }
+}
