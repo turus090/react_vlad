@@ -7,6 +7,7 @@ import rightTopRightImg from "./img/right_top_right.jpg";
 import rightTopButtomImg from "./img/right_buttom.jpg";
 import rightBottomImg from "./img/right_buttom_buttom.jpg";
 import Tablet from "./Tablet/Tablet";
+import GalleryM from "./Mobile/GalleryM";
 
 const Gallery = () => {
   return (
@@ -53,6 +54,7 @@ const Gallery = () => {
             />
           </div>
         </div>
+        <GalleryM />
         <Tablet />
       </div>
     </section>
